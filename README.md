@@ -1,6 +1,6 @@
 # WannaCry-ish
 
-This repository provides a program designed as an educational resource to understand how ransomware works under the hood. It does not exploit any vulnerabilities, and in real-world scenarios, executing ransomware typically requires one. The purpose of this tool is strictly educational, aiming to demystify the mechanisms behind ransomware, not to facilitate any illegal activities.
+This repository provides a program designed as an educational resource to understand how ransomware works under the hood. It does not exploit any vulnerabilities, and in real-world scenarios, executing ransomware typically requires one. Famous example of ransomware attack is [WannaCry](https://en.wikipedia.org/wiki/WannaCry_ransomware_attack) that used a Microsoft vulnerability to encrypt data and demanded ransom payments in Bitcoin. 
 
 ### Disclaimer 
 
@@ -45,8 +45,8 @@ Once the keys are generated, you can encrypt or decrypt all files within a speci
 
 - Encryption
   
-      make run-wannacry-ish-encrypt -d DIR_PATH
+      make run-wannacry-ish-encrypt d=DIR_PATH
 
 - Decryption
 
-      make run-wannacry-ish-encrypt -d DIR_PATH
+      make run-wannacry-ish-encrypt d=DIR_PATH
