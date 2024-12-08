@@ -35,7 +35,7 @@ In a real-world scenario, the private RSA key would never be stored with the enc
 
 ### Generate Keys
 
-Before running the encryption or decryption functionality, the required keys need to be generated i.e., the **AES Key** (a random symmetric key used for file encryption and the RSA Private Key (used to encrypt the AES key)
+Before running the encryption or decryption functionality, we need to generate the required keys i.e., the **AES Key** (a random symmetric key used for file encryption) and the **RSA Key Pair** (where the RSA public key is used to encrypt the AES key)
 
     make run-crypto-key
 
