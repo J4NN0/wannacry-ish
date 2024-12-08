@@ -1,1 +1,1 @@
-# wannacry-ish
+# WannaCry-ish
