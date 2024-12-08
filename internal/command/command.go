@@ -51,7 +51,7 @@ func (c *Cmd) EncryptCmdRun(cmd *cobra.Command, args []string) {
 		}
 	}
 
-	fmt.Printf("Successfully encrypted %d/%d files", success, len(filePaths))
+	fmt.Printf("Successfully encrypted %d/%d files\n", success, len(filePaths))
 }
 
 func (c *Cmd) DecryptCmdRun(cmd *cobra.Command, args []string) {
@@ -81,5 +81,5 @@ func (c *Cmd) DecryptCmdRun(cmd *cobra.Command, args []string) {
 		}
 	}
 
-	fmt.Printf("Successfully decrypted %d/%d files", success, len(filePaths))
+	fmt.Printf("Successfully decrypted %d/%d files\n", success, len(filePaths))
 }
