@@ -41,36 +41,7 @@ Before running the encryption or decryption functionality, we need to generate t
 
 Two files will be created locally in the working directory
 1.	The AES key `encrypted_aes_key.bin` (encrypted using the RSA public key to protect it), which will be used to encrypt files.
-2.	The RSA private key `rsa_private_key.pem`, which will be used to decrypt the encrypted AES key. It should look like this:
-
-         -----BEGIN RSA PRIVATE KEY-----
-         MIIEpAIBAAKCAQEA7qG30KFeteRlAdksuz7C3+dcDh91npWDBYEU03d/+Iz2Y7OT
-         HhZUzkZzG9mjyhxDHmNBz2bQq9Wog+xx75LPl+ccRrSqVw2kMqjTYomtpReltpWL
-         40eky/KtvhW6JQg97eWyk6jUs34kYmGI4uR2vAyi0MEXQZ0Mcff4b27wC6fKb+p9
-         TzQxaAsmwBZI6iJ3zyS3wRvXo3kMJ9azX06Mmq0wRV3tWhXuJtjkSjAuwTq62MnN
-         nnGEPisIw8KMuZqHJozoBBx6aY6HqwmLffg2Ojrxj+Ce3OSq8uC48Nvo1rcXrdMi
-         LnRQ3ZJV+9pIH2Zy6Jg8Dkrpv45t7yZWRGzMEQIDAQABAoIBAQDswpj8r06nyz6I
-         MfBWqzNwMT09aesp949yY5rFIPhgI4PGcgHSRTfJHU7R4ALI4Xeaa8J8w7bf9nFm
-         yq5Uk2XSgeOlJ1UmYAt8k9J/HrihZy/sUr3jN08DZvkI8seoPGAta8vdAxJeMBZr
-         YfgNnb1MYIEd+6ZWXDpfzTa5YOlbtSi9mHElEWxthKW9tsgyC8p7tDoTHpTConmT
-         m7EDGWHfP+j6W76UQl0a3mmWVT/e8FbyXdj/4cXDuUVzHfqy+Whhhw8W+clGtBgH
-         e86va6YHRvo57b9r7T6flhgCKq1ZVtYjNkmyWCWPEFETjmzxVcXp/IqhDAHI64lS
-         TfSWC4vdAoGBAO69+CDYOffGCziYeqoGLZu+jmZ9L/yi65DVbHEcYNCv4kPN43vy
-         XxTHUVaIVg9oRk8kLh+FiaEVRo71zhEexd9Hn1HD11jCW5lBIKf6R/xDaZPbcrVz
-         WkzvKtMLGwnD0tsD3V3EfjY9EjWxHMeJUtAMb/bcIecAC4YBDoJx4Fg/AoGBAP/h
-         tOKIIATfVMHhhqj6V7urLGI0hVawMTY11roAFWNozKWxYsMDPpL9QRofYrfeZ6Gx
-         FdOAIPbj70E7MvgBKZzCuqOJ3LovXm7atxqUzzOWHJHnH4X6nGieIJ4ovGmfg9kI
-         Qk7i0HA+3JdxovHeUrH5r/2NAGmPnJksbniOqUevAoGABSl0WPlz32iXy4R4en6h
-         s9Fd8NdaF0NKhpomuxda/IghA0hLV924spFQr+dIvRKLGqD0olfXzvTPzr1/1Bzv
-         OFGrHzB10oR5SIoA88DUl565hKnlBAlXdXxiV6fQ0Ng8EeI2ghWCiReu8hw/PA07
-         DiaGsTa3QPBeT2psbuOZby8CgYEA2WtpDUrpGfrBw/PjPdVpkpbBobhKy/vt9MgO
-         agEEK3Gy4d81scoh8zeph46/jMg3ehZEG3A1klLeyqiIiF5Eg2Savba4jKMPNFY3
-         WyiyXnzgTcD68hadq+8gfALVBVJ674CrBuiGf7mKKkxuTeHAlmU4etLCVO+n+ibc
-         vydJAxUCgYBr+1CEQWeHzWhEu2noTk+cCP4fT5RncpqGGReXaSqnG+pGjE0UCY+5
-         BL11DO/0PxrRy/GWgh3Qk4wVEZ3/Lw7MxTyuoA1qXMWVLNbFhn2kkwdaAEt1S1YG
-         LbtkWmmqjEunNYJZK1MZY51023stJwxSgdMPAT1PlFNJf7riPRoSaw==
-         -----END RSA PRIVATE KEY-----
-
+2.	The RSA private key `rsa_private_key.pem`, which will be used to decrypt the encrypted AES key.
 3. Note that the RSA public is not stored locally as it can be easily derived from the private key.
 
 ### Encrypt or Decrypt Files
