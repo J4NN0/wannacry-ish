@@ -10,10 +10,9 @@ This program is for educational purposes only. It is intended to demonstrate the
 
 Three types of keys are involved, each playing a critical role in the cryptographic workflow:
 1. AES Key
-   - A symmetric key used for encrypting and decrypting files within the target directory.
-   - Fast and efficient for large-scale encryption of data.
+   - A symmetric key used for encrypting and decrypting files within the target directory (fast and efficient for large-scale encryption of data).
 2. RSA Key Pair
-   - Public Key: It is used to encrypt the AES key after its usage.
+   - Public Key: It is used to encrypt the AES Key after its usage.
    - Private Key (kept safe by the attacker): Used to decrypt the AES key in case the ransom is paid.
 
 Key workflow:
@@ -22,7 +21,7 @@ Key workflow:
   2. The AES key is used to encrypt the contents of each file in the target directory.
   3. The original files are replaced with their encrypted versions.
   4. The AES key is encrypted with the RSA public key preventing the victim from decrypting files.
-  5. Note that the RSA private key is stored locally for demonstration purposes.
+     - Note that the RSA private key is stored locally for demonstration purposes.
 - Decryption
   1. The AES key is decrypted with the RSA private key.
   2. The decrypted AES key is used to restore the original file contents.
@@ -42,9 +41,9 @@ Before running the encryption or decryption functionality, we need to generate t
 Two files will be created locally in the working directory
 1.	The AES key `encrypted_aes_key.bin` (encrypted using the RSA public key to protect it), which will be used to encrypt files.
 2.	The RSA private key `rsa_private_key.pem`, which will be used to decrypt the encrypted AES key.
-3. Note that the RSA public is not stored locally as it can be easily derived from the private key.
+    - Note that the RSA public key is not stored locally as it can be easily derived from the private key.
 
-### Encrypt or Decrypt Files
+### Encrypt and Decrypt Files
 
 Once the keys are generated, we can encrypt or decrypt all files within a specified directory.
 
